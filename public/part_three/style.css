@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before
+{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* padding: 10rem 0; */
+  /* margin: .8rem; */
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #eee;
+  font-size: 1.7rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #fff;
+  /* height: 60rem; */
+  overflow-y: scroll;
+  padding: 2rem;
+  margin: 7rem auto;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 20%);
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+}
+.container::-webkit-scrollbar {
+  width: 0;
+}
+.btn_container{
+  position: absolute;
+  right:4rem;
+  top:4rem;
+  padding: 1rem 2rem;
+  background-color:#2998ff;
+  border-radius: 4px;
+}
+.next_button{
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+}
+.item{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+.item:not(:last-child){
+  margin-bottom: 3rem;
+}
+/* .item::after{
+  content: "";
+  clear:both;
+  display: table;
+} */
+.image_container{
+  padding:1rem; 
+  border:1px solid #eee;
+  width: 12rem;
+  height:12rem;
+  /* float: left; */
+  /* -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); */
+  border-radius: 50rem;
+  margin-right: 3rem;
+  /* outline:  solid 1px #eee; */
+  
+  /* -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); */
+  display: inline-block;
+  overflow: hidden;
+}
+.img{
+  transform: translateX(2rem) translateY(3rem) scale(2.5);
+} 
+.title{
+  font-weight:700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.sub_detailes{
+  display: inline;
+  margin-left: 1rem;
+  /* font-size: 3rem; */
+}
+.sub_detailes::after{
+      content: "\a";
+    white-space: pre;
+}
+
+.input_style,
+.input_style:active,
+.input_style:focus-visible{
+  width : 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  padding: 2rem 0rem;
+  border-bottom:1px solid #eee;
+  margin-bottom: 1rem;
+}
+/* #serach_tag,
+#serach_tag:active,
+#serach_tag:focus-visible{
+  width : 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  padding: 2rem 0rem;
+  border-bottom:1px solid #eee;
+  margin-bottom: 1rem;
+} */
